@@ -1,15 +1,16 @@
 /* ========== Base ========== */ 
+/* ========== Base ========== */ 
 :root{
-  /* GANTI WARNA (tidak sama dengan contoh teal) */
-  --bg: #1b1f5c;          /* biru-ungu gelap */
-  --bg-2: #141742;        /* lebih gelap */
+  /* TONE BARU: HIJAU + GOLD (lebih cocok untuk tema Umroh) */
+  --bg: #0b3b2e;          /* hijau gelap (nav/hero) */
+  --bg-2: #07261f;        /* hijau lebih gelap */
   --text: #0f172a;
   --muted: #64748b;
-  --soft: #f6f7ff;
+  --soft: #f4fbf7;        /* soft hijau muda */
   --white: #ffffff;
 
-  --accent: #ff4d8d;      /* pink */
-  --accent-2: #7c5cff;    /* ungu */
+  --accent: #d4af37;      /* GOLD (primary button, highlight) */
+  --accent-2: #16a34a;    /* HIJAU (secondary accent) */
 
   --card: #ffffff;
   --border: rgba(15, 23, 42, 0.10);
@@ -17,6 +18,7 @@
   --radius: 16px;
   --shadow: 0 14px 40px rgba(2, 6, 23, 0.10);
 }
+
 
 *{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
@@ -79,9 +81,9 @@ img{ max-width: 100%; height: auto; display: block; }
   position: sticky;
   top: 0;
   z-index: 999; /* ensure above everything */
-  background: rgba(27, 31, 92, 0.92);
+  background: rgba(11, 59, 46, 0.92);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255,255,255,.10);
+  border-bottom: 1px solid rgba(212,175,55,.18);
 }
 .nav-wrap{
   position: relative;
@@ -144,8 +146,8 @@ img{ max-width: 100%; height: auto; display: block; }
   left: 0;
   min-width: 190px;
   max-width: calc(100vw - 32px);
-  background: #121442;
-  border: 1px solid rgba(255,255,255,.12);
+  background: #07261f;
+  border: 1px solid rgba(212,175,55,.20);
   border-radius: 14px;
   box-shadow: var(--shadow);
   padding: 8px;
@@ -172,7 +174,7 @@ img{ max-width: 100%; height: auto; display: block; }
   width: 44px;
   height: 40px;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,.18);
+  border: 1px solid rgba(212,175,55,.28);
   align-items: center;
   justify-content: center;
   gap: 5px;
@@ -235,8 +237,8 @@ img{ max-width: 100%; height: auto; display: block; }
     display: block;
     padding: 10px 12px;
     border-radius: 12px;
-    background: rgba(255,255,255,.06);
-    border: 1px solid rgba(255,255,255,.10);
+    background: rgba(212,175,55,.10);
+    border: 1px solid rgba(212,175,55,.18);
   }
 
   /* matikan hover dropdown di mobile */
@@ -286,7 +288,7 @@ img{ max-width: 100%; height: auto; display: block; }
   color: rgba(255,255,255,.82);
 }
 .stars{
-  color: #ffd166;
+  color: #d4af37;
   letter-spacing: 2px;
   font-size: 14px;
 }
@@ -331,8 +333,8 @@ img{ max-width: 100%; height: auto; display: block; }
 }
 .search-form input:focus,
 .search-form select:focus{
-  border-color: rgba(124, 92, 255, 0.85);
-  box-shadow: 0 0 0 4px rgba(124, 92, 255, 0.20);
+  border-color: rgba(22, 163, 74, 0.85);
+  box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.20);
 }
 
 /* ========== Sections ========== */
@@ -405,19 +407,19 @@ img{ max-width: 100%; height: auto; display: block; }
   display: inline-flex;
   padding: 6px 10px;
   border-radius: 999px;
-  background: rgba(124,92,255,.14);
-  border: 1px solid rgba(124,92,255,.28);
-  color: #141742;
+  background: rgba(22,163,74,.14);
+  border: 1px solid rgba(22,163,74,.28);
+  color: #07261f;
   font-weight: 800;
   font-size: 12px;
 }
 .badge-plus{
-  background: rgba(255,77,141,.12);
-  border-color: rgba(255,77,141,.22);
-  color: #141742;
+  background: rgba(212,175,55,.14);
+  border-color: rgba(212,175,55,.22);
+  color: #07261f;
 }
 .rating{
-  color: #d48d00;
+  color: #d4af37;
   font-weight: 900;
   letter-spacing: 1px;
 }
@@ -468,8 +470,8 @@ img{ max-width: 100%; height: auto; display: block; }
   border-radius: 14px;
   display: grid;
   place-items: center;
-  background: rgba(255,255,255,.10);
-  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(212,175,55,.12);
+  border: 1px solid rgba(212,175,55,.18);
   margin-bottom: 10px;
   font-size: 20px;
 }
@@ -571,7 +573,7 @@ img{ max-width: 100%; height: auto; display: block; }
 
 /* Footer */
 .site-footer{
-  background: #0f1240;
+  background: #07261f;
   color: var(--white);
   padding: 38px 0 22px;
 }
@@ -586,8 +588,8 @@ img{ max-width: 100%; height: auto; display: block; }
   border-radius: 12px;
   display: grid;
   place-items: center;
-  background: rgba(255,255,255,.10);
-  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(212,175,55,.12);
+  border: 1px solid rgba(212,175,55,.18);
   font-weight: 800;
 }
 .footer-brand{
@@ -606,7 +608,7 @@ img{ max-width: 100%; height: auto; display: block; }
 }
 .footer-list a{ color: rgba(255,255,255,.88); }
 .footer-bottom{
-  border-top: 1px solid rgba(255,255,255,.10);
+  border-top: 1px solid rgba(212,175,55,.18);
   margin-top: 18px;
   padding-top: 14px;
   color: rgba(255,255,255,.65);
@@ -636,7 +638,7 @@ img{ max-width: 100%; height: auto; display: block; }
 .float-up{
   width: 48px;
   height: 48px;
-  background: rgba(20, 23, 66, 0.95);
+  background: rgba(7, 38, 31, 0.95);
   color: var(--white);
   font-weight: 900;
 }
@@ -686,8 +688,8 @@ img{ max-width: 100%; height: auto; display: block; }
     top: calc(100% + 10px);
     width: min(94vw, 420px);
     margin: 0 auto;
-    background: rgba(15, 18, 64, 0.98);
-    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(7, 38, 31, 0.98);
+    border: 1px solid rgba(212,175,55,.20);
     border-radius: 16px;
     padding: 10px;
     display: none;
@@ -713,14 +715,12 @@ img{ max-width: 100%; height: auto; display: block; }
     margin-left: 0;
   }
   .nav-dropmenu a{
-    background: rgba(255,255,255,.06);
-    border: 1px solid rgba(255,255,255,.10);
+    background: rgba(212,175,55,.10);
+    border: 1px solid rgba(212,175,55,.18);
   }
   .nav-toggle:checked ~ .nav{ display: flex; }
 
-  /* ====== DETAIL PAKET (fix utama) ======
-     Ini dibuat "lebih umum" supaya kena walau wrapper-nya beda nama.
-  */
+  /* ====== DETAIL PAKET (fix utama) ====== */
   .detail-grid,
   .detail-layout,
   .detail-wrap,
@@ -732,7 +732,6 @@ img{ max-width: 100%; height: auto; display: block; }
     gap: 14px !important;
   }
 
-  /* jika layout detail dibuat pakai flex */
   .detail-grid,
   .detail-layout,
   .detail-wrap,
@@ -750,7 +749,6 @@ img{ max-width: 100%; height: auto; display: block; }
     top: auto !important;
   }
 
-  /* tombol booking full width */
   .booking-box .btn,
   .detail-booking .btn,
   .booking-card .btn,
@@ -758,7 +756,6 @@ img{ max-width: 100%; height: auto; display: block; }
     width: 100% !important;
   }
 
-  /* card kecil di kiri (ringkasan/informasi) jangan jadi kolom sempit */
   .summary-grid,
   .info-grid,
   .detail-info-grid,
@@ -832,7 +829,6 @@ img{ max-width: 100%; height: auto; display: block; }
   .float-wa{ width: 52px; height: 52px; }
   .wa-icon{ width: 38px; height: 38px; }
 
-  /* DETAIL: gambar besar jadi proporsional */
   #heroImg,
   .detail-hero-img img,
   .detail-img img,
@@ -857,41 +853,31 @@ html, body{ overflow-x: hidden; }
 
 /* =========================================================
    DETAIL PAKET - FORCE 1 COLUMN ON MOBILE (TANPA UBAH HTML)
-   Tempel di PALING BAWAH main.css
 ========================================================= */
-
 @media (max-width: 820px){
-
-  /* 1) Grid utama (gambar kiri + booking kanan) jadi 1 kolom */
   .hero-grid{
     grid-template-columns: 1fr !important;
     gap: 14px !important;
   }
 
-  /* Pastikan section & aside tidak "nyempil" */
   .hero-grid > section,
   .hero-grid > aside{
     width: 100% !important;
     min-width: 0 !important;
   }
 
-  /* 2) Gambar hero di detail: tinggi lebih pendek biar pas HP */
   #heroImg{
     height: 220px !important;
   }
 
-  /* 3) Grid "Informasi Paket" yang pakai inline repeat(2,1fr)
-        -> paksa jadi 1 kolom */
   .hero-grid .cards-grid{
     grid-template-columns: 1fr !important;
   }
 
-  /* 4) Booking box jangan bikin layout sempit, full width */
   .hero-grid aside.hero-card{
     padding: 14px !important;
   }
 
-  /* 5) Tombol harga: rapikan agar teks tidak kepotong */
   .price-opt{
     display: flex !important;
     align-items: center !important;
@@ -901,7 +887,6 @@ html, body{ overflow-x: hidden; }
     white-space: normal !important;
   }
 
-  /* span harga yang pakai margin-left:auto biar tetap rapi */
   .price-opt span{
     margin-left: auto !important;
     text-align: right !important;
@@ -909,35 +894,28 @@ html, body{ overflow-x: hidden; }
     flex: 0 0 auto !important;
   }
 
-  /* 6) Meta badge + rating agar tidak memaksa 1 baris */
   .pkg-meta{
     flex-wrap: wrap !important;
     align-items: flex-start !important;
     gap: 8px !important;
   }
 
-  /* 7) Paksa semua card tidak overflow */
   .pkg-card,
   .hero-card{
     min-width: 0 !important;
   }
 }
 
-/* Extra small phones: buat lebih nyaman */
 @media (max-width: 420px){
-
-  /* padding container biar lega */
   .container{
     width: min(1120px, calc(100% - 22px)) !important;
   }
 
-  /* heading tidak terlalu besar */
   #title{
     font-size: 24px !important;
     line-height: 1.15 !important;
   }
 
-  /* tombol price: stack kalau sempit */
   .price-opt{
     flex-direction: column !important;
     align-items: flex-start !important;
@@ -1000,8 +978,8 @@ html, body{ overflow-x: hidden; }
 }
 .blog-search__input::placeholder{ color: rgba(255,255,255,.70); }
 .blog-search__input:focus{
-  border-color: rgba(255,255,255,.38);
-  box-shadow: 0 0 0 4px rgba(124, 92, 255, 0.20);
+  border-color: rgba(212,175,55,.55);
+  box-shadow: 0 0 0 4px rgba(212,175,55, 0.20);
 }
 
 /* ---------- BLOG CARD TWEAKS ---------- */
@@ -1019,9 +997,9 @@ html, body{ overflow-x: hidden; }
   display: inline-flex;
   padding: 6px 10px;
   border-radius: 999px;
-  background: rgba(124,92,255,.14);
-  border: 1px solid rgba(124,92,255,.28);
-  color: #141742;
+  background: rgba(22,163,74,.14);
+  border: 1px solid rgba(22,163,74,.28);
+  color: #07261f;
   font-weight: 800;
   font-size: 12px;
 }
@@ -1126,7 +1104,7 @@ html, body{ overflow-x: hidden; }
   gap: 6px;
 }
 .toc-li a{
-  color: #11143a;
+  color: #07261f;
 }
 .toc-h3{
   margin-left: 12px;
@@ -1180,8 +1158,8 @@ html, body{ overflow-x: hidden; }
 .article-content blockquote{
   margin: 14px 0;
   padding: 14px 14px;
-  border-left: 4px solid rgba(124,92,255,.65);
-  background: rgba(124,92,255,.08);
+  border-left: 4px solid rgba(22,163,74,.75);
+  background: rgba(22,163,74,.08);
   border-radius: 12px;
   color: rgba(15,23,42,.85);
   font-weight: 600;
@@ -1288,10 +1266,8 @@ html, body{
 
 /* =========================================================
    FIX TEXT KEPOTONG (BLOG + ARTICLE) - tempel PALING BAWAH
-   Tujuan: semua teks wrap normal di mobile & tidak ellipsis
 ========================================================= */
 
-/* 1) Pastikan elemen di dalam grid/flex boleh mengecil */
 .blog-hero__copy,
 .blog-hero__media,
 .blog-search__row,
@@ -1307,7 +1283,6 @@ html, body{
   min-width: 0;
 }
 
-/* 2) Paksa text wrap normal (hindari nowrap dari CSS lain) */
 .blog-title,
 .blog-title a,
 .blog-excerpt,
@@ -1324,7 +1299,6 @@ html, body{
   text-overflow: clip !important;
 }
 
-/* 3) Break kata panjang / URL supaya tidak keluar layar */
 .blog-title,
 .blog-title a,
 .blog-excerpt,
@@ -1340,7 +1314,6 @@ html, body{
   hyphens: auto;
 }
 
-/* 4) Untuk meta kecil (tanggal, read time) jangan dipaksa 1 baris */
 .blog-meta{
   flex-wrap: wrap;
 }
@@ -1348,14 +1321,12 @@ html, body{
   display: inline-block;
 }
 
-/* 5) Pastikan gambar & card tidak bikin layout melebar */
 .blog-card .pkg-img img,
 .article-figure img,
 .article-gif img{
   max-width: 100%;
 }
 
-/* 6) Mobile: spacing dan ukuran font agar nyaman & tidak “kebesaran” */
 @media (max-width: 640px){
   .blog-title{
     font-size: 1.05rem;
@@ -1380,14 +1351,11 @@ html, body{
     line-height: 1.85;
   }
 
-  /* TOC link panjang tidak bikin overflow */
   .toc-ul{
     padding-left: 16px;
   }
 }
 
-/* 7) Jika ada CSS lain yang melakukan line-clamp pada .muted atau paragraf,
-      ini mengunci blog excerpt agar selalu tampil full */
 .blog-excerpt{
   -webkit-line-clamp: unset !important;
   line-clamp: unset !important;
@@ -1418,8 +1386,8 @@ html, body{
   border-radius: 14px;
   display: grid;
   place-items: center;
-  background: rgba(124,92,255,.10);
-  border: 1px solid rgba(124,92,255,.18);
+  background: rgba(22,163,74,.10);
+  border: 1px solid rgba(22,163,74,.18);
   flex: 0 0 auto;
 }
 
@@ -1436,7 +1404,6 @@ html, body{
   display: block;
 }
 
-/* grid form + side */
 .contact-grid{
   display: grid;
   grid-template-columns: 1.15fr .85fr;
@@ -1444,7 +1411,6 @@ html, body{
   align-items: start;
 }
 
-/* form */
 .contact-form{
   background: #fff;
   border: 1px solid rgba(15,23,42,.10);
@@ -1479,11 +1445,10 @@ html, body{
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus{
-  border-color: rgba(124, 92, 255, 0.85);
-  box-shadow: 0 0 0 4px rgba(124, 92, 255, 0.20);
+  border-color: rgba(22, 163, 74, 0.85);
+  box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.20);
 }
 
-/* side note */
 .contact-side{
   min-width: 0;
 }
@@ -1506,7 +1471,6 @@ html, body{
   flex: 0 0 auto;
 }
 
-/* Mobile */
 @media (max-width: 980px){
   .contact-grid{
     grid-template-columns: 1fr;
@@ -1527,7 +1491,28 @@ html, body{
   }
 }
 
-/* anti overflow */
 .contact-grid, .contact-form, .contact-side{
   min-width: 0;
+}
+
+/* =========================================================
+   FIX KONTRAS TEKS DI SECTION-SOFT (INDEX) - tempel paling bawah
+========================================================= */
+
+/* Naikkan kontras teks muted secara umum */
+.muted{
+  color: rgba(15, 23, 42, 0.72); /* lebih gelap dari sebelumnya */
+}
+
+/* Khusus area soft background: bikin lebih tegas lagi */
+.section-soft .muted{
+  color: rgba(15, 23, 42, 0.78);
+}
+.section-soft .pkg-body .muted{
+  color: rgba(15, 23, 42, 0.78);
+}
+
+/* Kalau ada excerpt blog yang pakai muted juga */
+.section-soft p.muted{
+  color: rgba(15, 23, 42, 0.78);
 }
