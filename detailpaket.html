@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Detail Paket — Umrohnew</title>
+  <meta name="description" content="Detail paket umroh Umrohnew: itinerary terukur, fasilitas jelas, pendampingan manasik, dan booking cepat via WhatsApp." />
+  <meta name="keywords" content="detail paket umroh, booking umroh, itinerary umroh, fasilitas umroh, umrohnew" />
+  <meta name="author" content="haidar" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#141742" />
+
+  <link rel="canonical" href="detailpaket.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Detail Paket — Umrohnew" />
+  <meta property="og:description" content="Lihat detail paket umroh: harga, jadwal, fasilitas, dan booking cepat via WhatsApp." />
+  <meta property="og:image" content="assets/img/og-detail.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/img/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body id="top">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html#top" aria-label="Umrohnew">
+        <img class="brand-logo" src="assets/img/logonew.png" alt="Logo Umrohnew" />
+      </a>
+
+      <input type="checkbox" id="navToggle" class="nav-toggle" />
+      <label for="navToggle" class="nav-burger" aria-label="Buka menu navigasi">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="about.html" class="nav-link">Tentang</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropbtn" type="button" aria-haspopup="true" aria-expanded="false">
+            Paket Umroh <span class="caret">▾</span>
+          </button>
+          <div class="nav-dropmenu" role="menu">
+            <a href="ekonomis.html" role="menuitem">Paket Ekonomis</a>
+            <a href="umroh.html" role="menuitem">Umroh Plus</a>
+          </div>
+        </div>
+
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a class="btn btn-ghost" href="kontak.html">Kontak CS</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO DETAIL -->
+  <main class="section" aria-label="Detail paket">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:14px;">
+        <p class="muted" id="breadcrumb" style="margin:0;">
+          Home • Paket • <span id="crumbJenis">Detail</span>
+        </p>
+        <h1 id="title" style="margin:8px 0 0;">Detail Paket</h1>
+        <p class="muted" id="subtitle" style="margin:8px 0 0;">
+          Jadwal: <span id="jadwal">-</span> • Durasi: <span id="durasi">-</span>
+        </p>
+      </div>
+
+      <div class="hero-grid" style="grid-template-columns: 1.25fr .75fr;">
+        <!-- LEFT: CONTENT -->
+        <section aria-label="Konten detail">
+          <div style="border-radius: 16px; overflow: hidden; border: 1px solid rgba(15,23,42,.10); box-shadow: 0 10px 28px rgba(2,6,23,.06);">
+            <img id="heroImg" src="https://images.unsplash.com/photo-1541534401786-2077eed87a74?auto=format&fit=crop&w=1400&q=80"
+                 alt="Foto paket umroh" style="width:100%; height:360px; object-fit:cover;" loading="eager" fetchpriority="high" decoding="async" />
+          </div>
+
+          <div class="section" style="padding:22px 0 0;">
+            <div class="pkg-meta" style="margin-bottom:10px;">
+              <span class="badge" id="jenisBadge">Paket</span>
+              <span class="rating">★★★★★ <small>5.0</small></span>
+            </div>
+
+            <h2 style="margin:10px 0 6px; font-size:22px;">Ringkasan Fasilitas</h2>
+            <ul class="pkg-points" id="includeList" style="margin-bottom:14px;">
+              <li>Tiket PP, Visa, Hotel, Makan, Transport</li>
+              <li>Pendampingan Mutawwif & handling</li>
+              <li>Manasik & briefing teknis</li>
+            </ul>
+
+            <h2 style="margin:18px 0 6px; font-size:22px;">Informasi Paket</h2>
+            <div class="cards-grid" style="grid-template-columns: repeat(2, 1fr);">
+              <article class="pkg-card" style="grid-template-rows:auto 1fr;">
+                <div class="pkg-body">
+                  <h3>Hotel</h3>
+                  <p class="muted" id="hotel">-</p>
+                </div>
+              </article>
+
+              <article class="pkg-card" style="grid-template-rows:auto 1fr;">
+                <div class="pkg-body">
+                  <h3>Maskapai</h3>
+                  <p class="muted" id="maskapai">-</p>
+                </div>
+              </article>
+
+              <article class="pkg-card" style="grid-template-rows:auto 1fr;">
+                <div class="pkg-body">
+                  <h3>Briefing / Manasik</h3>
+                  <p class="muted" id="meet">-</p>
+                </div>
+              </article>
+
+              <article class="pkg-card" style="grid-template-rows:auto 1fr;">
+                <div class="pkg-body">
+                  <h3>Catatan</h3>
+                  <p class="muted">Harga & kuota dapat berubah mengikuti musim dan ketersediaan.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <section class="section" style="padding-top:18px;">
+            <div class="section-head">
+              <h2>Paket Terkait</h2>
+              <p class="muted">Rekomendasi lainnya (contoh).</p>
+            </div>
+
+            <div class="cards-grid">
+              <article class="pkg-card" style="grid-template-rows:180px 1fr;">
+                <div class="pkg-img">
+                  <img src="https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?auto=format&fit=crop&w=1200&q=80" alt="Paket terkait" loading="lazy" decoding="async" />
+                </div>
+                <div class="pkg-body">
+                  <h3>Paket Favorite Jamaah</h3>
+                  <p class="muted">Cocok untuk jadwal yang fleksibel.</p>
+                  <div class="pkg-foot">
+                    <a class="btn btn-dark" href="ekonomis.html">Lihat</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="pkg-card" style="grid-template-rows:180px 1fr;">
+                <div class="pkg-img">
+                  <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=80" alt="Paket terkait" loading="lazy" decoding="async" />
+                </div>
+                <div class="pkg-body">
+                  <h3>Paket Umroh Plus</h3>
+                  <p class="muted">Destinasi tambahan & itinerary terukur.</p>
+                  <div class="pkg-foot">
+                    <a class="btn btn-dark" href="umroh.html">Lihat</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="pkg-card" style="grid-template-rows:180px 1fr;">
+                <div class="pkg-img">
+                  <img src="https://images.unsplash.com/photo-1542816417-098367c5f176?auto=format&fit=crop&w=1200&q=80" alt="Paket terkait" loading="lazy" decoding="async" />
+                </div>
+                <div class="pkg-body">
+                  <h3>Paket Family</h3>
+                  <p class="muted">Tempo lebih santai untuk keluarga.</p>
+                  <div class="pkg-foot">
+                    <a class="btn btn-dark" href="ekonomis.html">Lihat</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <!-- RIGHT: BOOKING BOX -->
+        <aside class="hero-card" aria-label="Form booking paket">
+          <h3>Form Booking Paket</h3>
+          <p class="muted" style="margin-top:6px;">Pilih harga lalu booking via WhatsApp.</p>
+
+          <div class="pkg-card" style="grid-template-rows:auto 1fr; margin-top:12px;">
+            <div class="pkg-body">
+              <div class="pkg-meta" style="margin-bottom:6px;">
+                <strong>Harga</strong>
+                <span class="muted" id="priceLabel">Rp -</span>
+              </div>
+
+              <div style="display:grid; gap:10px; margin-top:10px;">
+                <button class="btn btn-dark btn-full price-opt" type="button" data-tier="quad">
+                  Harga Quad <span style="margin-left:auto;" id="pQuad">-</span>
+                </button>
+
+                <button class="btn btn-ghost btn-full price-opt" type="button" data-tier="triple">
+                  Harga Triple <span style="margin-left:auto;" id="pTriple">-</span>
+                </button>
+
+                <button class="btn btn-ghost btn-full price-opt" type="button" data-tier="double">
+                  Harga Double <span style="margin-left:auto;" id="pDouble">-</span>
+                </button>
+              </div>
+
+              <div style="margin-top:14px;">
+                <a class="btn btn-primary btn-full" id="bookBtn" target="_blank" rel="noopener" href="#">
+                  Book Now
+                </a>
+                <p class="small muted" style="margin-top:10px;">
+                  Order akan kami follow up oleh Customer Service kami via WhatsApp.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pkg-card" style="grid-template-rows:auto 1fr; margin-top:12px;">
+            <div class="pkg-body">
+              <h3 style="margin:0 0 6px;">Butuh paket custom?</h3>
+              <p class="muted" style="margin:0 0 12px;">Klik tombol WhatsApp melayang atau chat sekarang.</p>
+              <a class="btn btn-dark btn-full" target="_blank" rel="noopener"
+                 href="https://wa.me/62895369969300?text=Assalamualaikum%20Umrohnew,%20saya%20ingin%20paket%20custom%20umroh.">
+                Hubungi CS
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark">U</span>
+          <strong>Umrohnew</strong>
+        </div>
+        <p class="muted-on-dark">Paket umroh ekonomis hingga umroh plus dengan layanan terarah.</p>
+      </div>
+      <div>
+        <h4>Info Kontak</h4>
+        <ul class="footer-list">
+          <li>WA: 0895-3699-69300</li>
+          <li>Email: cs@umrohnew.id</li>
+          <li>Alamat: (isi nanti)</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Social Media</h4>
+        <ul class="footer-list">
+          <li><a href="#top">Instagram</a></li>
+          <li><a href="#top">Facebook</a></li>
+          <li><a href="#top">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>© 2026 Umrohnew. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <div class="floating">
+    <a class="float-btn float-up" href="#top" aria-label="Kembali ke atas">↑</a>
+
+    <a class="float-btn float-wa"
+       target="_blank" rel="noopener"
+       href="https://wa.me/62895369969300?text=Assalamualaikum%20Umrohnew,%20saya%20ingin%20konsultasi%20paket%20umroh."
+       aria-label="Chat WhatsApp Umrohnew">
+      <span class="wa-icon" aria-hidden="true">
+        <svg class="wa-svg" viewBox="0 0 32 32" role="img" focusable="false">
+          <path fill="currentColor" d="M19.11 17.36c-.26-.13-1.54-.76-1.78-.85-.24-.09-.41-.13-.59.13-.17.26-.68.85-.84 1.03-.15.17-.31.2-.57.07-.26-.13-1.1-.4-2.09-1.28-.77-.69-1.29-1.54-1.44-1.8-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.17.04-.33-.02-.46-.07-.13-.59-1.42-.81-1.95-.21-.5-.43-.44-.59-.44h-.5c-.17 0-.46.07-.7.33-.24.26-.92.9-.92 2.2 0 1.3.94 2.55 1.07 2.73.13.17 1.85 2.83 4.48 3.97.63.27 1.12.43 1.5.55.63.2 1.21.17 1.66.1.51-.08 1.54-.63 1.76-1.24.22-.61.22-1.13.15-1.24-.07-.11-.24-.17-.5-.31z"/>
+          <path fill="currentColor" d="M16.02 3.2c-6.86 0-12.44 5.48-12.44 12.22 0 2.16.59 4.27 1.72 6.12L4.3 28.8l7.45-1.95c1.86 1 3.96 1.53 6.1 1.53 6.86 0 12.44-5.48 12.44-12.22S22.88 3.2 16.02 3.2zm0 22.1c-1.95 0-3.86-.53-5.52-1.54l-.39-.23-4.42 1.16 1.18-4.26-.26-.4a9.86 9.86 0 0 1-1.57-5.28c0-5.45 4.55-9.89 10.18-9.89 5.63 0 10.18 4.44 10.18 9.89 0 5.45-4.55 9.89-10.18 9.89z"/>
+        </svg>
+      </span>
+    </a>
+  </div>
+
+  <script>
+  (function () {
+    const WA_NUMBER = "62895369969300";
+    const DEFAULT_WA_TEXT = "Assalamualaikum Umrohnew, saya ingin konsultasi paket umroh.";
+    function buildWaLink(text){ return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`; }
+
+    function rupiah(n){
+      const num = Number(n || 0);
+      return "Rp " + num.toLocaleString("id-ID");
+    }
+
+    // Floating Up
+    const floatUp = document.querySelector(".float-up");
+    if (floatUp) {
+      function toggleUp() {
+        const show = window.scrollY > 300;
+        floatUp.style.opacity = show ? "1" : "0";
+        floatUp.style.pointerEvents = show ? "auto" : "none";
+        floatUp.style.transform = show ? "translateY(0)" : "translateY(6px)";
+      }
+      toggleUp();
+      window.addEventListener("scroll", toggleUp, { passive: true });
+      floatUp.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+
+    // Floating WA default
+    const floatWa = document.querySelector(".float-wa");
+    if (floatWa) floatWa.setAttribute("href", buildWaLink(DEFAULT_WA_TEXT));
+
+    // Mobile dropdown toggle
+    const dropBtn = document.querySelector(".nav-dropbtn");
+    const dropMenu = document.querySelector(".nav-dropmenu");
+    if (dropBtn && dropMenu) {
+      dropBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        const isOpen = dropMenu.style.display === "block";
+        dropMenu.style.display = isOpen ? "none" : "block";
+        dropBtn.setAttribute("aria-expanded", String(!isOpen));
+      });
+      document.addEventListener("click", function (e) {
+        const inDrop = e.target.closest(".nav-dropdown");
+        if (!inDrop) {
+          dropMenu.style.display = "";
+          dropBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
+
+    // ===== Fill detail from query =====
+    const params = new URLSearchParams(location.search);
+
+    const title = params.get("title") || "Detail Paket Umroh";
+    const jenis = (params.get("jenis") || "").toLowerCase();
+    const jadwal = params.get("jadwal") || "-";
+    const durasi = params.get("durasi") || "-";
+    const price = Number(params.get("price") || 0);
+    const img = params.get("img") || "";
+    const include = params.get("include") || "";
+    const hotel = params.get("hotel") || "-";
+    const maskapai = params.get("maskapai") || "-";
+    const meet = params.get("meet") || "-";
+
+    const elTitle = document.getElementById("title");
+    const elJadwal = document.getElementById("jadwal");
+    const elDurasi = document.getElementById("durasi");
+    const elImg = document.getElementById("heroImg");
+    const elHotel = document.getElementById("hotel");
+    const elMaskapai = document.getElementById("maskapai");
+    const elMeet = document.getElementById("meet");
+    const elJenisBadge = document.getElementById("jenisBadge");
+    const elCrumbJenis = document.getElementById("crumbJenis");
+    const elIncludeList = document.getElementById("includeList");
+
+    if (elTitle) elTitle.textContent = title;
+    if (elJadwal) elJadwal.textContent = jadwal;
+    if (elDurasi) elDurasi.textContent = durasi;
+
+    if (elImg && img) {
+      elImg.src = img;
+      elImg.alt = title;
+    }
+
+    if (elHotel) elHotel.textContent = hotel;
+    if (elMaskapai) elMaskapai.textContent = maskapai;
+    if (elMeet) elMeet.textContent = meet;
+
+    const isPlus = jenis === "plus";
+    if (elJenisBadge) {
+      elJenisBadge.textContent = isPlus ? "Umroh Plus" : "Ekonomis";
+      elJenisBadge.className = isPlus ? "badge badge-plus" : "badge";
+    }
+    if (elCrumbJenis) elCrumbJenis.textContent = isPlus ? "Umroh Plus" : "Paket Ekonomis";
+
+    // Include list from string
+    if (elIncludeList && include) {
+      const items = include.split(",").map(s => s.trim()).filter(Boolean);
+      if (items.length) {
+        elIncludeList.innerHTML = items.map(it => `<li>${it}</li>`).join("");
+      }
+    }
+
+    // ===== Price options =====
+    const pQuad = document.getElementById("pQuad");
+    const pTriple = document.getElementById("pTriple");
+    const pDouble = document.getElementById("pDouble");
+    const priceLabel = document.getElementById("priceLabel");
+    const bookBtn = document.getElementById("bookBtn");
+
+    const quad = price || 0;
+    const triple = price ? price + 1500000 : 0;
+    const double = price ? price + 3000000 : 0;
+
+    if (pQuad) pQuad.textContent = quad ? rupiah(quad) : "-";
+    if (pTriple) pTriple.textContent = triple ? rupiah(triple) : "-";
+    if (pDouble) pDouble.textContent = double ? rupiah(double) : "-";
+
+    let selectedTier = "quad";
+    let selectedPrice = quad;
+
+    function updateBooking(){
+      if (priceLabel) priceLabel.textContent = selectedPrice ? rupiah(selectedPrice) : "Rp -";
+      const msg =
+        `Assalamualaikum Umrohnew, saya ingin booking paket:\n\n` +
+        `• Paket: ${title}\n` +
+        `• Jenis: ${isPlus ? "UMROH PLUS" : "EKONOMIS"}\n` +
+        `• Jadwal: ${jadwal}\n` +
+        `• Durasi: ${durasi}\n` +
+        `• Harga (${selectedTier.toUpperCase()}): ${selectedPrice ? rupiah(selectedPrice) : "-"}\n\n` +
+        `Mohon info detail itinerary & fasilitas lengkapnya. Terima kasih.`;
+
+      if (bookBtn) bookBtn.href = buildWaLink(msg);
+    }
+
+    document.querySelectorAll(".price-opt").forEach(btn => {
+      btn.addEventListener("click", function(){
+        const tier = this.dataset.tier;
+        selectedTier = tier;
+
+        if (tier === "quad") selectedPrice = quad;
+        if (tier === "triple") selectedPrice = triple;
+        if (tier === "double") selectedPrice = double;
+
+        document.querySelectorAll(".price-opt").forEach(b => {
+          b.classList.remove("btn-dark");
+          b.classList.add("btn-ghost");
+        });
+        this.classList.remove("btn-ghost");
+        this.classList.add("btn-dark");
+
+        updateBooking();
+      });
+    });
+
+    updateBooking();
+
+    // ===== Schema Product + Breadcrumb (dynamic) =====
+    const productSchema = {
+      "@context":"https://schema.org",
+      "@type":"Product",
+      "name": title,
+      "image": img ? [img] : [],
+      "brand": {"@type":"Brand","name":"Umrohnew"},
+      "description": `Detail paket ${title} (${isPlus ? "Umroh Plus" : "Ekonomis"}) dengan jadwal ${jadwal} durasi ${durasi}.`,
+      "offers":{
+        "@type":"Offer",
+        "priceCurrency":"IDR",
+        "price": selectedPrice || quad || 0,
+        "availability":"https://schema.org/InStock",
+        "url": location.href
+      }
+    };
+
+    const breadcrumbSchema = {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Beranda","item":"index.html"},
+        {"@type":"ListItem","position":2,"name": isPlus ? "Umroh Plus" : "Paket Ekonomis","item": isPlus ? "umroh.html" : "ekonomis.html"},
+        {"@type":"ListItem","position":3,"name": title,"item": location.href}
+      ]
+    };
+
+    const s1 = document.createElement("script");
+    s1.type = "application/ld+json";
+    s1.textContent = JSON.stringify(productSchema);
+    document.head.appendChild(s1);
+
+    const s2 = document.createElement("script");
+    s2.type = "application/ld+json";
+    s2.textContent = JSON.stringify(breadcrumbSchema);
+    document.head.appendChild(s2);
+  })();
+  </script>
+</body>
+</html>

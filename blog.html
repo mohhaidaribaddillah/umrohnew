@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Blog Umroh — Tips & Panduan Jamaah | Umrohnew</title>
+  <meta name="description" content="Artikel tips umroh, persiapan, manasik, checklist, itinerary, hingga cara memilih paket umroh ekonomis dan umroh plus bersama Umrohnew." />
+  <meta name="keywords" content="blog umroh, tips umroh, panduan umroh, checklist umroh, manasik umroh, paket umroh ekonomis, umroh plus, umrohnew" />
+  <meta name="author" content="haidar" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#141742" />
+
+  <link rel="canonical" href="blog.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Blog Umroh — Umrohnew" />
+  <meta property="og:description" content="Kumpulan artikel tips umroh: persiapan, manasik, itinerary, dan cara memilih paket terbaik." />
+  <meta property="og:image" content="assets/img/og-blog.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/img/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body id="top">
+  <!-- Header / Navbar (sesuai index update) -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html#top" aria-label="Umrohnew">
+        <img class="brand-logo" src="assets/img/logonew.png" alt="Logo Umrohnew" />
+      </a>
+
+      <input type="checkbox" id="navToggle" class="nav-toggle" />
+      <label for="navToggle" class="nav-burger" aria-label="Buka menu navigasi">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="about.html" class="nav-link">Tentang</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropbtn" type="button" aria-haspopup="true" aria-expanded="false">
+            Paket Umroh <span class="caret">▾</span>
+          </button>
+          <div class="nav-dropmenu" role="menu">
+            <a href="ekonomis.html" role="menuitem">Paket Ekonomis</a>
+            <a href="umroh.html" role="menuitem">Umroh Plus</a>
+          </div>
+        </div>
+
+        <a href="blog.html" class="nav-link" aria-current="page">Blog</a>
+        <a class="btn btn-ghost" href="kontak.html">Kontak CS</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO BLOG -->
+  <main class="hero" aria-label="Hero blog">
+    <div class="container">
+      <div class="blog-hero">
+        <div class="blog-hero__copy">
+          <h1>Blog <span class="highlight">Umrohnew</span></h1>
+          <p class="lead">
+            Tips & panduan umroh: persiapan, manasik, itinerary, hingga cara memilih paket ekonomis atau umroh plus.
+          </p>
+
+          <div class="blog-search" role="search" aria-label="Pencarian artikel">
+            <label class="blog-search__label" for="blogSearch">Cari artikel</label>
+            <div class="blog-search__row">
+              <input id="blogSearch" class="blog-search__input" type="search" placeholder="Contoh: checklist, manasik, obat, budget…" autocomplete="off" />
+              <button id="blogSearchBtn" class="btn btn-primary" type="button">Search</button>
+            </div>
+            <p class="small muted" id="blogInfo" aria-live="polite" style="margin:10px 0 0;"></p>
+          </div>
+        </div>
+
+        <div class="blog-hero__media" aria-label="Gambar blog">
+          <div class="hero-card">
+            <h3>Update Artikel</h3>
+            <p class="muted">Artikel disusun ringkas, praktis, dan relevan untuk jamaah.</p>
+            <div class="blog-hero__img">
+              <img
+                src="assets/img/umroh1_11zon.webp"
+                alt="Suasana jamaah umroh di area Masjidil Haram"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+                width="1200"
+                height="800"
+              />
+            </div>
+            <p class="small muted" style="margin-top:10px;">Gambar placeholder Unsplash — bisa diganti.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- LIST BLOG -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <h2>Artikel Terbaru</h2>
+        <p class="muted">Halaman 1 menampilkan 6 artikel. Halaman 2 menampilkan 3 artikel.</p>
+      </div>
+
+      <div class="cards-grid" id="blogGrid" aria-label="Daftar artikel"></div>
+
+      <!-- Pagination Prev / Next -->
+      <div class="blog-pager" aria-label="Pagination">
+        <button class="btn btn-dark" id="prevPage" type="button">← Prev</button>
+        <div class="blog-pager__info muted" id="pageInfo">Halaman -</div>
+        <button class="btn btn-dark" id="nextPage" type="button">Next →</button>
+      </div>
+    </div>
+  </section>
+
+    <!-- CTA -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-head center">
+        <h2>Siap Berangkat Bersama Umrohnew?</h2>
+        <p class="muted-on-dark">Konsultasikan kebutuhanmu—kami bantu pilih paket terbaik sesuai budget dan jadwal.</p>
+      </div>
+      <div class="center">
+        <a class="btn btn-primary" href="index.html#paket-populer">Lihat Paket</a>
+        <a class="btn btn-ghost" target="_blank" rel="noopener"
+           href="https://wa.me/62895369969300?text=Assalamualaikum%20Umrohnew,%20saya%20ingin%20konsultasi%20paket%20umroh.">
+          Chat WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark">U</span>
+          <strong>Umrohnew</strong>
+        </div>
+        <p class="muted-on-dark">
+          Paket umroh ekonomis hingga umroh plus dengan pelayanan ramah dan pendampingan profesional.
+        </p>
+      </div>
+
+      <div>
+        <h4>Info Kontak</h4>
+        <ul class="footer-list">
+          <li>WA: 0895-3699-69300</li>
+          <li>Email: cs@umrohnew.id</li>
+          <li>Alamat: (isi nanti)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Social Media</h4>
+        <ul class="footer-list">
+          <li><a href="#top">Instagram</a></li>
+          <li><a href="#top">Facebook</a></li>
+          <li><a href="#top">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© 2026 Umrohnew. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <div class="floating">
+    <a class="float-btn float-up" href="#top" aria-label="Kembali ke atas">↑</a>
+
+    <a class="float-btn float-wa"
+       target="_blank" rel="noopener"
+       href="https://wa.me/62895369969300?text=Assalamualaikum%20Umrohnew,%20saya%20ingin%20konsultasi%20paket%20umroh."
+       aria-label="Chat WhatsApp Umrohnew">
+      <span class="wa-icon" aria-hidden="true">
+        <svg class="wa-svg" viewBox="0 0 32 32" role="img" focusable="false">
+          <path fill="currentColor" d="M19.11 17.36c-.26-.13-1.54-.76-1.78-.85-.24-.09-.41-.13-.59.13-.17.26-.68.85-.84 1.03-.15.17-.31.2-.57.07-.26-.13-1.1-.4-2.09-1.28-.77-.69-1.29-1.54-1.44-1.8-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.17.04-.33-.02-.46-.07-.13-.59-1.42-.81-1.95-.21-.5-.43-.44-.59-.44h-.5c-.17 0-.46.07-.7.33-.24.26-.92.9-.92 2.2 0 1.3.94 2.55 1.07 2.73.13.17 1.85 2.83 4.48 3.97.63.27 1.12.43 1.5.55.63.2 1.21.17 1.66.1.51-.08 1.54-.63 1.76-1.24.22-.61.22-1.13.15-1.24-.07-.11-.24-.17-.5-.31z"/>
+          <path fill="currentColor" d="M16.02 3.2c-6.86 0-12.44 5.48-12.44 12.22 0 2.16.59 4.27 1.72 6.12L4.3 28.8l7.45-1.95c1.86 1 3.96 1.53 6.1 1.53 6.86 0 12.44-5.48 12.44-12.22S22.88 3.2 16.02 3.2zm0 22.1c-1.95 0-3.86-.53-5.52-1.54l-.39-.23-4.42 1.16 1.18-4.26-.26-.4a9.86 9.86 0 0 1-1.57-5.28c0-5.45 4.55-9.89 10.18-9.89 5.63 0 10.18 4.44 10.18 9.89 0 5.45-4.55 9.89-10.18 9.89z"/>
+        </svg>
+      </span>
+    </a>
+  </div>
+
+  <script defer>
+  (function(){
+    // ===== Basic helpers =====
+    const WA_NUMBER = "62895369969300";
+    const DEFAULT_WA_TEXT = "Assalamualaikum Umrohnew, saya ingin konsultasi paket umroh.";
+    function buildWaLink(text){ return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`; }
+    function normalize(s){ return String(s||"").toLowerCase().trim(); }
+
+    // Floating Up show/hide + smooth
+    const floatUp = document.querySelector(".float-up");
+    if (floatUp) {
+      function toggleUp() {
+        const show = window.scrollY > 300;
+        floatUp.style.opacity = show ? "1" : "0";
+        floatUp.style.pointerEvents = show ? "auto" : "none";
+        floatUp.style.transform = show ? "translateY(0)" : "translateY(6px)";
+      }
+      toggleUp();
+      window.addEventListener("scroll", toggleUp, { passive: true });
+      floatUp.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+
+    // Floating WA default
+    const floatWa = document.querySelector(".float-wa");
+    if (floatWa) floatWa.setAttribute("href", buildWaLink(DEFAULT_WA_TEXT));
+
+    // Mobile dropdown toggle
+    const dropBtn = document.querySelector(".nav-dropbtn");
+    const dropMenu = document.querySelector(".nav-dropmenu");
+    if (dropBtn && dropMenu) {
+      dropBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        const isOpen = dropMenu.style.display === "block";
+        dropMenu.style.display = isOpen ? "none" : "block";
+        dropBtn.setAttribute("aria-expanded", String(!isOpen));
+      });
+      document.addEventListener("click", function (e) {
+        const inDrop = e.target.closest(".nav-dropdown");
+        if (!inDrop) {
+          dropMenu.style.display = "";
+          dropBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
+
+    // ===== Blog Data (9 posts) =====
+    const POSTS = [
+      {
+        id:"checklist-umroh",
+        title:"Checklist Umroh Lengkap: Dari Dokumen sampai Perlengkapan",
+        excerpt:"Panduan checklist praktis untuk jamaah: dokumen, perlengkapan, obat, hingga tips packing.",
+        date:"2026-01-10",
+        read:"7 menit",
+        category:"Persiapan",
+        img:"https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1400&q=80",
+        alt:"Suasana Masjidil Haram pada malam hari"
+      },
+      {
+        id:"panduan-manasik",
+        title:"Panduan Manasik: Apa yang Harus Dipahami Jamaah Pemula",
+        excerpt:"Ringkasan manasik: rukun umroh, urutan ibadah, adab, hingga kesalahan umum yang perlu dihindari.",
+        date:"2026-01-09",
+        read:"6 menit",
+        category:"Manasik",
+        img:"assets/img/umroh2_11zon.webp",
+        alt:"Jamaah berjalan di area Masjidil Haram"
+      },
+      {
+        id:"ekonomis-vs-plus",
+        title:"Paket Ekonomis vs Umroh Plus: Cara Memilih yang Paling Cocok",
+        excerpt:"Bandingkan paket ekonomis dan umroh plus dari sisi itinerary, tempo, dan value agar tidak salah pilih.",
+        date:"2026-01-08",
+        read:"5 menit",
+        category:"Paket",
+        img:"https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?auto=format&fit=crop&w=1400&q=80",
+        alt:"Ka'bah dan jamaah di pelataran"
+      },
+      {
+        id:"tips-hemat-budget",
+        title:"Tips Hemat Budget Umroh Tanpa Mengurangi Kenyamanan",
+        excerpt:"Strategi mengatur budget: prioritas pengeluaran, pilihan kamar, jadwal, dan persiapan dari jauh hari.",
+        date:"2026-01-07",
+        read:"6 menit",
+        category:"Budget",
+        img:"https://images.unsplash.com/photo-1541534401786-2077eed87a74?auto=format&fit=crop&w=1400&q=80",
+        alt:"Masjid megah dengan langit senja"
+      },
+      {
+        id:"kesehatan-umroh",
+        title:"Kesehatan Jamaah: Obat Wajib & Cara Menjaga Stamina Saat Umroh",
+        excerpt:"Daftar obat umum, tips mencegah dehidrasi, menjaga daya tahan tubuh, dan etika saat sakit di perjalanan.",
+        date:"2026-01-06",
+        read:"7 menit",
+        category:"Kesehatan",
+        img:"https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1400&q=80",
+        alt:"Orang membawa botol minum saat perjalanan"
+      },
+      {
+        id:"adab-di-tanah-suci",
+        title:"Adab di Tanah Suci: Etika di Masjidil Haram dan Masjid Nabawi",
+        excerpt:"Panduan adab: menjaga ketertiban, menghargai jamaah lain, dan cara beribadah dengan tenang.",
+        date:"2026-01-05",
+        read:"5 menit",
+        category:"Adab",
+        img:"https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=1400&q=80",
+        alt:"Suasana masjid dengan jamaah"
+      },
+      {
+        id:"itinerary-nyaman",
+        title:"Itinerary Umroh Nyaman: Cara Menilai Jadwal yang Realistis",
+        excerpt:"Tanda itinerary yang sehat: ritme ibadah, waktu istirahat, jarak hotel, dan pembagian kegiatan harian.",
+        date:"2026-01-04",
+        read:"6 menit",
+        category:"Itinerary",
+        img:"https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1400&q=80",
+        alt:"Orang membaca catatan perjalanan"
+      },
+      {
+        id:"packing-anti-ribet",
+        title:"Packing Anti Ribet: Cara Bawa Barang Secukupnya untuk Umroh",
+        excerpt:"Teknik packing ringkas: list prioritas, baju ihram, alas kaki, adaptor, dan cara hemat ruang koper.",
+        date:"2026-01-03",
+        read:"5 menit",
+        category:"Perlengkapan",
+        img:"https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1400&q=80",
+        alt:"Koper dan perlengkapan perjalanan"
+      },
+      {
+        id:"tips-umroh-keluarga",
+        title:"Umroh Bareng Keluarga: Tips untuk Orang Tua dan Anak",
+        excerpt:"Strategi memilih tempo, prioritas kenyamanan, komunikasi, dan cara menjaga fokus ibadah saat bersama keluarga.",
+        date:"2026-01-02",
+        read:"7 menit",
+        category:"Keluarga",
+        img:"assets/img/umroh3_11zon.webp",
+        alt:"Keluarga sedang traveling"
+      }
+    ];
+
+    // ===== Pagination rules (Prev/Next only) =====
+    // page 1 -> 6 cards, page 2 -> 3 cards
+    const PAGE_SIZES = { 1: 6, 2: 3 };
+
+    // URL state
+    const url = new URL(location.href);
+    let page = Math.max(1, Math.min(2, Number(url.searchParams.get("page") || 1)));
+    let q = url.searchParams.get("q") || "";
+
+    const grid = document.getElementById("blogGrid");
+    const info = document.getElementById("blogInfo");
+    const pageInfo = document.getElementById("pageInfo");
+    const prevBtn = document.getElementById("prevPage");
+    const nextBtn = document.getElementById("nextPage");
+
+    const searchInput = document.getElementById("blogSearch");
+    const searchBtn = document.getElementById("blogSearchBtn");
+
+    if (searchInput) searchInput.value = q;
+
+    function getFiltered(){
+      const nq = normalize(q);
+      if (!nq) return POSTS.slice();
+
+      return POSTS.filter(p => {
+        const hay = normalize(`${p.title} ${p.excerpt} ${p.category}`);
+        return hay.includes(nq);
+      });
+    }
+
+    function setUrl(){
+      const u = new URL(location.href);
+      if (q) u.searchParams.set("q", q); else u.searchParams.delete("q");
+      u.searchParams.set("page", String(page));
+      history.replaceState({}, "", u.toString());
+    }
+
+    function fmtDate(iso){
+      try{
+        const d = new Date(iso);
+        return d.toLocaleDateString("id-ID", { year:"numeric", month:"long", day:"numeric" });
+      }catch(e){ return iso; }
+    }
+
+    function cardHTML(p){
+      const href = `artikel.html?id=${encodeURIComponent(p.id)}`;
+      return `
+        <article class="pkg-card blog-card" data-id="${p.id}">
+          <a class="blog-card__cover" href="${href}" aria-label="Baca artikel ${p.title}">
+            <div class="pkg-img">
+              <img src="${p.img}" alt="${p.alt}" loading="lazy" decoding="async" width="1400" height="900" />
+            </div>
+          </a>
+          <div class="pkg-body">
+            <div class="blog-meta">
+              <span class="blog-pill">${p.category}</span>
+              <span class="muted blog-meta__small">${fmtDate(p.date)} • ${p.read}</span>
+            </div>
+            <h3 class="blog-title"><a href="${href}">${p.title}</a></h3>
+            <p class="muted blog-excerpt">${p.excerpt}</p>
+            <div class="pkg-foot">
+              <a class="btn btn-dark" href="${href}">Baca</a>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function render(){
+      const filtered = getFiltered();
+
+      // kalau hasil sedikit, tetap jalan: tampilkan sebanyak mungkin di page 1
+      const total = filtered.length;
+      const maxPage = total <= PAGE_SIZES[1] ? 1 : 2;
+      if (page > maxPage) page = maxPage;
+
+      // slice sesuai aturan 6 + 3
+      const start = (page === 1) ? 0 : PAGE_SIZES[1];
+      const size = (page === 1) ? PAGE_SIZES[1] : PAGE_SIZES[2];
+      const items = filtered.slice(start, start + size);
+
+      if (grid) grid.innerHTML = items.map(cardHTML).join("");
+
+      if (info){
+        info.textContent = q
+          ? `Hasil pencarian "${q}": ${total} artikel ditemukan.`
+          : `Menampilkan ${Math.min(total, (page===1?6:3))} artikel di halaman ${page}.`;
+      }
+
+      if (pageInfo){
+        pageInfo.textContent = `Halaman ${page} dari ${maxPage}`;
+      }
+
+      if (prevBtn) prevBtn.disabled = page <= 1;
+      if (nextBtn) nextBtn.disabled = page >= maxPage;
+
+      setUrl();
+    }
+
+    function applySearch(){
+      q = (searchInput ? searchInput.value : "").trim();
+      page = 1;
+      render();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    if (searchBtn) searchBtn.addEventListener("click", applySearch);
+    if (searchInput) {
+      searchInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") { e.preventDefault(); applySearch(); }
+      });
+      searchInput.addEventListener("input", () => {
+        // optional: realtime update ringan
+        q = (searchInput.value || "").trim();
+        page = 1;
+        render();
+      });
+    }
+
+    if (prevBtn) prevBtn.addEventListener("click", () => { page = Math.max(1, page - 1); render(); });
+    if (nextBtn) nextBtn.addEventListener("click", () => { page = Math.min(2, page + 1); render(); });
+
+    render();
+
+    // ===== Schema (Blog) =====
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog Umrohnew",
+      "description": "Artikel tips & panduan umroh: persiapan, manasik, itinerary, dan memilih paket.",
+      "publisher": { "@type":"Organization", "name":"Umrohnew" },
+      "inLanguage": "id-ID"
+    };
+    const s = document.createElement("script");
+    s.type = "application/ld+json";
+    s.textContent = JSON.stringify(schema);
+    document.head.appendChild(s);
+  })();
+  </script>
+</body>
+</html>

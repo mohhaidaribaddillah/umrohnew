@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Paket Ekonomis — Umrohnew</title>
+  <meta name="description" content="Paket Umroh Ekonomis Umrohnew: pilihan hemat, jadwal terukur, manasik lengkap, dan pendampingan profesional." />
+  <meta name="keywords" content="umroh ekonomis, paket umroh hemat, umroh murah, travel umroh, paket umroh 9 hari, umroh keluarga, umrohnew" />
+  <meta name="author" content="haidar" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#141742" />
+
+  <link rel="canonical" href="ekonomis.html" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Paket Ekonomis — Umrohnew" />
+  <meta property="og:description" content="Pilihan paket umroh ekonomis: hemat, nyaman, dan pendampingan profesional." />
+  <meta property="og:image" content="assets/img/og-ekonomis.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicons (siapkan filenya di assets/img/favicon/) -->
+  <link rel="icon" href="assets/img/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
+  <!-- Performance hints for Unsplash -->
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Schema: WebSite + Organization -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Umrohnew",
+    "url":"ekonomis.html",
+    "publisher":{
+      "@type":"Organization",
+      "name":"Umrohnew",
+      "url":"index.html",
+      "logo":{"@type":"ImageObject","url":"assets/img/logo-umrohnew.png"}
+    }
+  }
+  </script>
+</head>
+
+<body id="top">
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html#top" aria-label="Umrohnew">
+        <img class="brand-logo" src="assets/img/logonew.png" alt="Logo Umrohnew" />
+      </a>
+
+      <input type="checkbox" id="navToggle" class="nav-toggle" />
+      <label for="navToggle" class="nav-burger" aria-label="Buka menu navigasi">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="about.html" class="nav-link">Tentang</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropbtn" type="button" aria-haspopup="true" aria-expanded="false">
+            Paket Umroh <span class="caret">▾</span>
+          </button>
+          <div class="nav-dropmenu" role="menu">
+            <a href="ekonomis.html" role="menuitem">Paket Ekonomis</a>
+            <a href="umroh.html" role="menuitem">Umroh Plus</a>
+          </div>
+        </div>
+
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a class="btn btn-ghost" href="kontak.html">Kontak CS</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="hero" aria-label="Hero paket ekonomis">
+    <div class="container hero-grid">
+      <section class="hero-copy">
+        <h1>Paket <span class="highlight">Ekonomis</span></h1>
+        <p class="lead">
+          Paket umroh ekonomis untuk jamaah yang ingin <strong>hemat</strong> tanpa mengorbankan kenyamanan.
+          Manasik jelas, handling rapi, dan pendampingan profesional.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#daftar-paket">Lihat Paket</a>
+          <a class="btn btn-outline" target="_blank" rel="noopener"
+             href="https://wa.me/62895369969300?text=Assalamualaikum%20Umrohnew,%20saya%20ingin%20konsultasi%20paket%20umroh%20ekonomis.">
+            Konsultasi WhatsApp
+          </a>
+        </div>
+
+        <div class="trust">
+          <div class="stars" aria-label="Rating 5 dari 5">★★★★★</div>
+          <p><strong>Hemat</strong> • <strong>Terarah</strong> • <strong>Nyaman</strong></p>
+        </div>
+      </section>
+
+      <aside class="hero-card" aria-label="Filter paket ekonomis">
+        <h3>Filter Paket</h3>
+        <p class="muted">Cari paket berdasarkan kata kunci & jadwal.</p>
+
+        <form id="filterForm" class="search-form" action="#daftar-paket" method="get">
+          <label>
+            Cari paket
+            <input id="q" type="text" name="q" placeholder="Contoh: hemat, family, 9 hari" />
+          </label>
+
+          <label>
+            Jadwal
+            <select id="jadwal" name="jadwal">
+              <option value="">Semua Bulan</option>
+              <option>Januari</option><option>Februari</option><option>Maret</option>
+              <option>April</option><option>Mei</option><option>Juni</option>
+              <option>Juli</option><option>Agustus</option><option>September</option>
+              <option>Oktober</option><option>November</option><option>Desember</option>
+            </select>
+          </label>
+
+          <button class="btn btn-primary btn-full" type="submit">Search</button>
+          <button class="btn btn-dark btn-full" type="button" id="resetBtn">Reset</button>
+          <p class="small muted" id="info" aria-live="polite"></p>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Paket List -->
+  <section id="daftar-paket" class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <h2>Daftar Paket Ekonomis</h2>
+      </div>
+
+      <div class="cards-grid" id="cards">
+        <!-- 1 -->
+        <article class="pkg-card"
+          data-jenis="ekonomis"
+          data-jadwal="Januari"
+          data-title="Umroh Ekonomis Hemat 9 Hari"
+          data-price="23900000"
+          data-durasi="9 Hari"
+          data-hotel="Hotel nyaman (setara bintang 3/4)"
+          data-maskapai="Maskapai sesuai jadwal"
+          data-include="Tiket PP, Visa, Hotel, Makan, Transport, Muthawif"
+          data-meet="Manasik + perlengkapan"
+          data-img="https://images.unsplash.com/photo-1541534401786-2077eed87a74?auto=format&fit=crop&w=1200&q=80">
+          <div class="pkg-img" aria-label="Foto paket umroh ekonomis">
+            <img src="https://images.unsplash.com/photo-1541534401786-2077eed87a74?auto=format&fit=crop&w=1200&q=80"
+                 alt="Umroh Ekonomis Hemat 9 Hari" loading="lazy" decoding="async" />
+          </div>
+          <div class="pkg-body">
+            <h3>Umroh Ekonomis Hemat 9 Hari</h3>
+            <div class="pkg-meta">
+              <span class="badge">Ekonomis</span>
+              <span class="rating">★★★★★ <small>5.0</small></span>
+            </div>
+            <ul class="pkg-points">
+              <li>Durasi 9 hari • Jadwal Januari</li>
+              <li>Manasik terarah + perlengkapan</li>
+              <li>Handling rapi & pendampingan</li>
+            </ul>
+            <div class="pkg-foot">
+              <div class="price"><small>Mulai dari</small><strong>Rp 23.900.000</strong></div>
+              <a class="btn btn-dark detail-link" href="#">Detail</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="pkg-card"
+          data-jenis="ekonomis"
+          data-jadwal="Februari"
+          data-title="Umroh Ekonomis Nyaman 10 Hari"
+          data-price="26900000"
+          data-durasi="10 Hari"
+          data-hotel="Akomodasi dekat area strategis"
+          data-maskapai="Maskapai sesuai kuota"
+          data-include="Tiket PP, Visa, Hotel, Makan, Transport, Mutawwif"
+          data-meet="Manasik + briefing teknis"
+          data-img="assets/img/umroh5_11zon.webp">
+          <div class="pkg-img">
+            <img src="assets/img/umroh5_11zon.webp"
+                 alt="Umroh Ekonomis Nyaman 10 Hari" loading="lazy" decoding="async" />
+          </div>
+          <div class="pkg-body">
+            <h3>Umroh Ekonomis Nyaman 10 Hari</h3>
+            <div class="pkg-meta">
+              <span class="badge">Ekonomis</span>
+              <span class="rating">★★★★★ <small>5.0</small></span>
+            </div>
+            <ul class="pkg-points">
+              <li>Durasi 10 hari • Jadwal Februari</li>
+              <li>Tempo lebih lega</li>
+              <li>CS responsif & transparan</li>
+            </ul>
+            <div class="pkg-foot">
+              <div class="price"><small>Mulai dari</small><strong>Rp 26.900.000</strong></div>
+              <a class="btn btn-dark detail-link" href="#">Detail</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="pkg-card"
+          data-jenis="ekonomis"
+          data-jadwal="Maret"
+          data-title="Umroh Ekonomis Family Santai"
+          data-price="29900000"
+          data-durasi="10 Hari"
+          data-hotel="Hotel family-friendly"
+          data-maskapai="Maskapai sesuai jadwal"
+          data-include="Tiket, Visa, Hotel, Makan, Transport, Mutawwif"
+          data-meet="Manasik + panduan ibadah"
+          data-img="https://images.unsplash.com/photo-1564769662533-4f00a87b4056?auto=format&fit=crop&w=1200&q=80">
+          <div class="pkg-img">
+            <img src="https://images.unsplash.com/photo-1564769662533-4f00a87b4056?auto=format&fit=crop&w=1200&q=80"
+                 alt="Umroh Ekonomis Family Santai" loading="lazy" decoding="async" />
+          </div>
+          <div class="pkg-body">
+            <h3>Umroh Ekonomis Family Santai</h3>
+            <div class="pkg-meta">
+              <span class="badge">Ekonomis</span>
+              <span class="rating">★★★★★ <small>5.0</small></span>
+            </div>
+            <ul class="pkg-points">
+              <li>Cocok orang tua & keluarga</li>
+              <li>Durasi 10 hari • Jadwal Maret</li>
+              <li>Pendampingan intens</li>
+            </ul>
+            <div class="pkg-foot">
+              <div class="price"><small>Mulai dari</small><strong>Rp 29.900.000</strong></div>
+              <a class="btn btn-dark detail-link" href="#">Detail</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="pkg-card"
+          data-jenis="ekonomis"
+          data-jadwal="April"
+          data-title="Umroh Ekonomis Reguler 9 Hari"
+          data-price="24900000"
+          data-durasi="9 Hari"
+          data-hotel="Hotel setara bintang 3/4"
+          data-maskapai="Maskapai sesuai kuota"
+          data-include="Tiket, Visa, Hotel, Makan, Transport, Mutawwif"
+          data-meet="Manasik + briefing"
+          data-img="assets/img/umroh3_11zon.webp">
+          <div class="pkg-img">
+            <img src="assets/img/umroh3_11zon.webp"
+                 alt="Umroh Ekonomis Reguler 9 Hari" loading="lazy" decoding="async" />
+          </div>
+          <div class="pkg-body">
+            <h3>Umroh Ekonomis Reguler 9 Hari</h3>
+            <div class="pkg-meta">
+              <span class="badge">Ekonomis</span>
+              <span class="rating">★★★★★ <small>4.9</small></span>
+            </div>
+            <ul class="pkg-points">
+              <li>Durasi 9 hari • Jadwal April</li>
+              <li>Dokumen dibantu sampai rapi</li>
+              <li>Itinerary terukur</li>
+            </ul>
+            <div class="pkg-foot">
+              <div class="price"><small>Mulai dari</small><strong>Rp 24.900.000</strong></div>
+              <a class="btn btn-dark detail-link" href="#">Detail</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="pkg-card"
+          data-jenis="ekonomis"
+          data-jadwal="Mei"
+          data-title="Umroh Ekonomis Hemat Plus City Tour"
+          data-price="28900000"
+          data-durasi="10 Hari"
+          data-hotel="Hotel nyaman & makan terjaga"
+          data-maskapai="Maskapai sesuai jadwal"
+          data-include="Tiket, Visa, Hotel, Makan, Transport, Mutawwif"
+          data-meet="Manasik + perlengkapan"
+          data-img="https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?auto=format&fit=crop&w=1200&q=80">
+          <div class="pkg-img">
+            <img src="https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?auto=format&fit=crop&w=1200&q=80"
+                 alt="Umroh Ekonomis Hemat Plus City Tour" loading="lazy" decoding="async" />
+          </div>
+          <div class="pkg-body">
+            <h3>Umroh Ekonomis Hemat Plus City Tour</h3>
+            <div class="pkg-meta">
+              <span class="badge">Ekonomis</span>
+              <span class="rating">★★★★★ <small>4.9</small></span>
+            </div>
+            <ul class="pkg-points">
+              <li>Bonus city tour ringan</li>
+              <li>Durasi 10 hari • Jadwal Mei</li>
+              <li>CS responsif</li>
+            </ul>
+            <div class="pkg-foot">
+              <div class="price"><small>Mulai dari</small><strong>Rp 28.900.000</strong></div>
+              <a class="btn btn-dark detail-link" href="#">Detail</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="pkg-card"
+          data-jenis="ekonomis"
+          data-jadwal="Juni"
+          data-title="Umroh Ekonomis Best Value 9 Hari"
+          data-price="25900000"
+          data-durasi="9 Hari"
+          data-hotel="Hotel strategis & nyaman"
+          data-maskapai="Maskapai sesuai kuota"
+          data-include="Tiket, Visa, Hotel, Makan, Transport, Mutawwif"
+          data-meet="Manasik + panduan ibadah"
+          data-img="assets/img/umroh2_11zon.webp">
+          <div class="pkg-img">
+            <img src="assets/img/umroh2_11zon.webp"
+                 alt="Umroh Ekonomis Best Value 9 Hari" loading="lazy" decoding="async" />
+          </div>
+          <div class="pkg-body">
+            <h3>Umroh Ekonomis Best Value 9 Hari</h3>
+            <div class="pkg-meta">
+              <span class="badge">Ekonomis</span>
+              <span class="rating">★★★★★ <small>4.8</small></span>
+            </div>
+            <ul class="pkg-points">
+              <li>Value terbaik untuk budget hemat</li>
+              <li>Durasi 9 hari • Jadwal Juni</li>
+              <li>Briefing & manasik lengkap</li>
+            </ul>
+            <div class="pkg-foot">
+              <div class="price"><small>Mulai dari</small><strong>Rp 25.900.000</strong></div>
+              <a class="btn btn-dark detail-link" href="#">Detail</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (singkat, mengikuti pattern) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark">U</span>
+          <strong>Umrohnew</strong>
+        </div>
+        <p class="muted-on-dark">Paket umroh ekonomis hingga umroh plus dengan layanan terarah.</p>
+      </div>
+      <div>
+        <h4>Info Kontak</h4>
+        <ul class="footer-list">
+          <li>WA: 0895-3699-69300</li>
+          <li>Email: cs@umrohnew.id</li>
+          <li>Alamat: (isi nanti)</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Social Media</h4>
+        <ul class="footer-list">
+          <li><a href="#top">Instagram</a></li>
+          <li><a href="#top">Facebook</a></li>
+          <li><a href="#top">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>© 2026 Umrohnew. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <div class="floating">
+    <a class="float-btn float-up" href="#top" aria-label="Kembali ke atas">↑</a>
+
+    <a class="float-btn float-wa"
+       target="_blank" rel="noopener"
+       href="https://wa.me/62895369969300?text=Assalamualaikum%20Umrohnew,%20saya%20ingin%20konsultasi%20paket%20umroh%20ekonomis."
+       aria-label="Chat WhatsApp Umrohnew">
+      <span class="wa-icon" aria-hidden="true">
+        <svg class="wa-svg" viewBox="0 0 32 32" role="img" focusable="false">
+          <path fill="currentColor" d="M19.11 17.36c-.26-.13-1.54-.76-1.78-.85-.24-.09-.41-.13-.59.13-.17.26-.68.85-.84 1.03-.15.17-.31.2-.57.07-.26-.13-1.1-.4-2.09-1.28-.77-.69-1.29-1.54-1.44-1.8-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.17.04-.33-.02-.46-.07-.13-.59-1.42-.81-1.95-.21-.5-.43-.44-.59-.44h-.5c-.17 0-.46.07-.7.33-.24.26-.92.9-.92 2.2 0 1.3.94 2.55 1.07 2.73.13.17 1.85 2.83 4.48 3.97.63.27 1.12.43 1.5.55.63.2 1.21.17 1.66.1.51-.08 1.54-.63 1.76-1.24.22-.61.22-1.13.15-1.24-.07-.11-.24-.17-.5-.31z"/>
+          <path fill="currentColor" d="M16.02 3.2c-6.86 0-12.44 5.48-12.44 12.22 0 2.16.59 4.27 1.72 6.12L4.3 28.8l7.45-1.95c1.86 1 3.96 1.53 6.1 1.53 6.86 0 12.44-5.48 12.44-12.22S22.88 3.2 16.02 3.2zm0 22.1c-1.95 0-3.86-.53-5.52-1.54l-.39-.23-4.42 1.16 1.18-4.26-.26-.4a9.86 9.86 0 0 1-1.57-5.28c0-5.45 4.55-9.89 10.18-9.89 5.63 0 10.18 4.44 10.18 9.89 0 5.45-4.55 9.89-10.18 9.89z"/>
+        </svg>
+      </span>
+    </a>
+  </div>
+
+  <!-- Scripts: filter + detail link builder + floating up + dropdown mobile -->
+  <script>
+  (function () {
+    const WA_NUMBER = "62895369969300";
+    const DEFAULT_WA_TEXT = "Assalamualaikum Umrohnew, saya ingin konsultasi paket umroh.";
+    function buildWaLink(text){ return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`; }
+    function normalize(str){ return String(str||"").toLowerCase().replace(/\s+/g," ").trim(); }
+
+    // Floating Up show/hide
+    const floatUp = document.querySelector(".float-up");
+    if (floatUp) {
+      function toggleUp() {
+        const show = window.scrollY > 300;
+        floatUp.style.opacity = show ? "1" : "0";
+        floatUp.style.pointerEvents = show ? "auto" : "none";
+        floatUp.style.transform = show ? "translateY(0)" : "translateY(6px)";
+      }
+      toggleUp();
+      window.addEventListener("scroll", toggleUp, { passive: true });
+      floatUp.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+
+    // Floating WA default
+    const floatWa = document.querySelector(".float-wa");
+    if (floatWa) floatWa.setAttribute("href", buildWaLink(DEFAULT_WA_TEXT));
+
+    // Mobile dropdown toggle
+    const dropBtn = document.querySelector(".nav-dropbtn");
+    const dropMenu = document.querySelector(".nav-dropmenu");
+    if (dropBtn && dropMenu) {
+      dropBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        const isOpen = dropMenu.style.display === "block";
+        dropMenu.style.display = isOpen ? "none" : "block";
+        dropBtn.setAttribute("aria-expanded", String(!isOpen));
+      });
+      document.addEventListener("click", function (e) {
+        const inDrop = e.target.closest(".nav-dropdown");
+        if (!inDrop) {
+          dropMenu.style.display = "";
+          dropBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
+
+    // Build detail links from dataset
+    const cards = Array.from(document.querySelectorAll(".pkg-card"));
+    cards.forEach(card => {
+      const a = card.querySelector(".detail-link");
+      if (!a) return;
+
+      const params = new URLSearchParams({
+        jenis: card.dataset.jenis || "",
+        title: card.dataset.title || card.querySelector("h3")?.textContent?.trim() || "",
+        jadwal: card.dataset.jadwal || "",
+        durasi: card.dataset.durasi || "",
+        price: card.dataset.price || "",
+        hotel: card.dataset.hotel || "",
+        maskapai: card.dataset.maskapai || "",
+        include: card.dataset.include || "",
+        meet: card.dataset.meet || "",
+        img: card.dataset.img || card.querySelector("img")?.src || ""
+      });
+
+      a.setAttribute("href", `detailpaket.html?${params.toString()}`);
+    });
+
+    // Filter
+    const form = document.getElementById("filterForm");
+    const q = document.getElementById("q");
+    const jadwal = document.getElementById("jadwal");
+    const resetBtn = document.getElementById("resetBtn");
+    const info = document.getElementById("info");
+
+    function applyFilter(){
+      const qv = normalize(q?.value);
+      const jv = normalize(jadwal?.value);
+      let shown = 0;
+
+      cards.forEach(card => {
+        const title = normalize(card.dataset.title);
+        const bullets = normalize(Array.from(card.querySelectorAll(".pkg-points li")).map(li => li.textContent).join(" "));
+        const cj = normalize(card.dataset.jadwal);
+
+        const okQ = !qv || title.includes(qv) || bullets.includes(qv);
+        const okJ = !jv || cj === jv;
+
+        card.style.display = (okQ && okJ) ? "" : "none";
+        if (okQ && okJ) shown++;
+      });
+
+      if (info) info.textContent = shown ? `Menampilkan ${shown} paket.` : "Tidak ada paket cocok. Coba ubah kata kunci / jadwal.";
+      document.getElementById("daftar-paket")?.scrollIntoView({behavior:"smooth", block:"start"});
+    }
+
+    function resetFilter(){
+      if (q) q.value = "";
+      if (jadwal) jadwal.value = "";
+      cards.forEach(c => c.style.display = "");
+      if (info) info.textContent = "";
+      document.getElementById("daftar-paket")?.scrollIntoView({behavior:"smooth", block:"start"});
+    }
+
+    if (form) form.addEventListener("submit", function(e){ e.preventDefault(); applyFilter(); });
+    if (jadwal) jadwal.addEventListener("change", applyFilter);
+    if (resetBtn) resetBtn.addEventListener("click", resetFilter);
+  })();
+  </script>
+</body>
+</html>

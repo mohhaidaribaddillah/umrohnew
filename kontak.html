@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Kontak CS — Umrohnew</title>
+  <meta name="description" content="Kontak CS Umrohnew untuk konsultasi paket umroh ekonomis hingga umroh plus. Respon cepat via WhatsApp atau kirim pesan melalui form." />
+  <meta name="keywords" content="kontak umrohnew, kontak cs umroh, konsultasi paket umroh, booking umroh whatsapp, umroh ekonomis, umroh plus" />
+  <meta name="author" content="haidar" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#141742" />
+  <link rel="canonical" href="kontak.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kontak CS — Umrohnew" />
+  <meta property="og:description" content="Konsultasi paket umroh via WhatsApp atau kirim pesan lewat form kontak Umrohnew." />
+  <meta property="og:image" content="assets/img/og-kontak.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body id="top">
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html#top" aria-label="Umrohnew">
+        <img class="brand-logo" src="assets/img/logonew.png" alt="Logo Umrohnew" />
+      </a>
+
+      <!-- Mobile nav toggle (no JS) -->
+      <input type="checkbox" id="navToggle" class="nav-toggle" />
+      <label for="navToggle" class="nav-burger" aria-label="Buka menu navigasi">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="about.html" class="nav-link">Tentang</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropbtn" type="button" aria-haspopup="true" aria-expanded="false">
+            Paket Umroh <span class="caret">▾</span>
+          </button>
+          <div class="nav-dropmenu" role="menu">
+            <a href="ekonomis.html" role="menuitem">Paket Ekonomis</a>
+            <a href="umroh.html" role="menuitem">Umroh Plus</a>
+          </div>
+        </div>
+
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a class="btn btn-ghost" href="kontak.html" aria-current="page">Kontak CS</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="hero" aria-label="Kontak Umrohnew">
+    <div class="container hero-grid">
+      <section class="hero-copy">
+        <h1>Kontak <span class="highlight">Customer Service</span></h1>
+        <p class="lead">
+          Butuh konsultasi paket umroh? Kirim pesan melalui form atau langsung chat WhatsApp.
+          Kami respon cepat untuk bantu pilih paket sesuai jadwal dan budget.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#form-kontak">Isi Form Kontak</a>
+          <a class="btn btn-outline" target="_blank" rel="noopener"
+             href="https://wa.me/62895369969300?text=Assalamualaikum%20Umrohnew,%20saya%20ingin%20konsultasi%20paket%20umroh.">
+            Chat WhatsApp
+          </a>
+        </div>
+
+        <div class="trust">
+          <div class="stars" aria-label="Rating 5 dari 5">★★★★★</div>
+          <p><strong>Responsif</strong> • <strong>Ramah</strong> • <strong>Terarah</strong></p>
+        </div>
+      </section>
+
+      <aside class="hero-card" aria-label="Info kontak singkat">
+        <h3>Info Cepat</h3>
+        <p class="muted">Pilih cara kontak yang paling nyaman.</p>
+
+        <div class="contact-img">
+          <img
+            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=80"
+            alt="Tim customer service siap membantu"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <p class="small muted" style="margin-top:10px;">
+          Gambar placeholder dari Unsplash — boleh diganti.
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <!-- FORM KONTAK -->
+  <section id="form-kontak" class="section section-soft" aria-label="Form kontak">
+    <div class="container">
+      <div class="section-head center">
+        <h2>Form Kontak</h2>
+        <p class="muted">Isi data berikut, lalu klik kirim. Pesan akan diarahkan ke WhatsApp CS.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Form -->
+        <form class="contact-form" id="contactForm" aria-label="Kirim pesan">
+          <label>
+            Nama Lengkap
+            <input type="text" id="cName" name="name" placeholder="Contoh: Haidar" required />
+          </label>
+
+          <label>
+            Nomor WhatsApp
+            <input type="tel" id="cPhone" name="phone" placeholder="Contoh: 0895xxxxxxx" required />
+          </label>
+
+          <label>
+            Email (opsional)
+            <input type="email" id="cEmail" name="email" placeholder="Contoh: nama@email.com" />
+          </label>
+
+          <label>
+            Pilih Jenis Paket
+            <select id="cJenis" name="jenis">
+              <option value="">Pilih jenis paket</option>
+              <option value="Paket Ekonomis">Paket Ekonomis</option>
+              <option value="Umroh Plus">Umroh Plus</option>
+              <option value="Custom">Custom</option>
+            </select>
+          </label>
+
+          <label>
+            Pesan
+            <textarea id="cMsg" name="message" rows="5" placeholder="Tulis kebutuhan Anda: bulan berangkat, durasi, budget, dll." required></textarea>
+          </label>
+
+          <button class="btn btn-primary btn-full" type="submit">Kirim via WhatsApp</button>
+          <p class="small muted" id="contactInfo" aria-live="polite" style="margin:10px 0 0;"></p>
+        </form>
+
+        <!-- Box info -->
+        <aside class="hero-card contact-side" aria-label="Jam layanan dan catatan">
+          <h3>Catatan Layanan</h3>
+          <p class="muted">
+            Setelah klik “Kirim via WhatsApp”, pesan Anda akan otomatis terbentuk dan dibuka di WhatsApp.
+          </p>
+
+          <div class="contact-note">
+            <div class="cn-row">
+              <span class="cn-dot" aria-hidden="true"></span>
+              <div>
+                <strong>Jam Layanan</strong>
+                <div class="muted">Setiap hari • 08.00 – 21.00 WIB</div>
+              </div>
+            </div>
+
+            <div class="cn-row">
+              <span class="cn-dot" aria-hidden="true"></span>
+              <div>
+                <strong>Respon Cepat</strong>
+                <div class="muted">Biasanya dibalas dalam beberapa menit.</div>
+              </div>
+            </div>
+
+            <div class="cn-row">
+              <span class="cn-dot" aria-hidden="true"></span>
+              <div>
+                <strong>Siapkan Info</strong>
+                <div class="muted">Jadwal, durasi, dan budget agar rekomendasi lebih tepat.</div>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn btn-dark btn-full" target="_blank" rel="noopener"
+             href="https://wa.me/62895369969300?text=Assalamualaikum%20Umrohnew,%20saya%20ingin%20konsultasi%20paket%20umroh.">
+            Chat WhatsApp Sekarang
+          </a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark">U</span>
+          <strong>Umrohnew</strong>
+        </div>
+        <p class="muted-on-dark">
+          Paket umroh ekonomis hingga umroh plus dengan pelayanan ramah dan pendampingan profesional.
+        </p>
+      </div>
+
+      <div>
+        <h4>Info Kontak</h4>
+        <ul class="footer-list">
+          <li>WA: 0895-3699-69300</li>
+          <li>Email: cs@umrohnew.id</li>
+          <li>Alamat: (isi nanti)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Social Media</h4>
+        <ul class="footer-list">
+          <li><a href="#top">Instagram</a></li>
+          <li><a href="#top">Facebook</a></li>
+          <li><a href="#top">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© 2026 Umrohnew. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <div class="floating">
+    <a class="float-btn float-up" href="#top" aria-label="Kembali ke atas">↑</a>
+
+    <a class="float-btn float-wa"
+       target="_blank" rel="noopener"
+       href="https://wa.me/62895369969300?text=Assalamualaikum%20Umrohnew,%20saya%20ingin%20konsultasi%20paket%20umroh."
+       aria-label="Chat WhatsApp Umrohnew">
+      <span class="wa-icon" aria-hidden="true">
+        <svg class="wa-svg" viewBox="0 0 32 32" role="img" focusable="false">
+          <path fill="currentColor" d="M19.11 17.36c-.26-.13-1.54-.76-1.78-.85-.24-.09-.41-.13-.59.13-.17.26-.68.85-.84 1.03-.15.17-.31.2-.57.07-.26-.13-1.1-.4-2.09-1.28-.77-.69-1.29-1.54-1.44-1.8-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.17.04-.33-.02-.46-.07-.13-.59-1.42-.81-1.95-.21-.5-.43-.44-.59-.44h-.5c-.17 0-.46.07-.7.33-.24.26-.92.9-.92 2.2 0 1.3.94 2.55 1.07 2.73.13.17 1.85 2.83 4.48 3.97.63.27 1.12.43 1.5.55.63.2 1.21.17 1.66.1.51-.08 1.54-.63 1.76-1.24.22-.61.22-1.13.15-1.24-.07-.11-.24-.17-.5-.31z"/>
+          <path fill="currentColor" d="M16.02 3.2c-6.86 0-12.44 5.48-12.44 12.22 0 2.16.59 4.27 1.72 6.12L4.3 28.8l7.45-1.95c1.86 1 3.96 1.53 6.1 1.53 6.86 0 12.44-5.48 12.44-12.22S22.88 3.2 16.02 3.2zm0 22.1c-1.95 0-3.86-.53-5.52-1.54l-.39-.23-4.42 1.16 1.18-4.26-.26-.4a9.86 9.86 0 0 1-1.57-5.28c0-5.45 4.55-9.89 10.18-9.89 5.63 0 10.18 4.44 10.18 9.89 0 5.45-4.55 9.89-10.18 9.89z"/>
+        </svg>
+      </span>
+    </a>
+  </div>
+
+  <!-- Script: dropdown mobile + floating up + form -> WA -->
+  <script>
+  (function () {
+    const WA_NUMBER = "62895369969300";
+    const DEFAULT_WA_TEXT = "Assalamualaikum Umrohnew, saya ingin konsultasi paket umroh.";
+    function buildWaLink(text){ return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`; }
+
+    // Floating Up show/hide + smooth
+    const floatUp = document.querySelector(".float-up");
+    if (floatUp) {
+      function toggleUp() {
+        const show = window.scrollY > 300;
+        floatUp.style.opacity = show ? "1" : "0";
+        floatUp.style.pointerEvents = show ? "auto" : "none";
+        floatUp.style.transform = show ? "translateY(0)" : "translateY(6px)";
+      }
+      toggleUp();
+      window.addEventListener("scroll", toggleUp, { passive: true });
+      floatUp.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+
+    // Floating WA default text
+    const floatWa = document.querySelector(".float-wa");
+    if (floatWa) floatWa.setAttribute("href", buildWaLink(DEFAULT_WA_TEXT));
+
+    // Mobile dropdown toggle
+    const dropBtn = document.querySelector(".nav-dropbtn");
+    const dropMenu = document.querySelector(".nav-dropmenu");
+    if (dropBtn && dropMenu) {
+      dropBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        const isOpen = dropMenu.style.display === "block";
+        dropMenu.style.display = isOpen ? "none" : "block";
+        dropBtn.setAttribute("aria-expanded", String(!isOpen));
+      });
+      document.addEventListener("click", function (e) {
+        const inDrop = e.target.closest(".nav-dropdown");
+        if (!inDrop) {
+          dropMenu.style.display = "";
+          dropBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
+
+    // Form -> WA
+    const form = document.getElementById("contactForm");
+    const info = document.getElementById("contactInfo");
+
+    function val(id){ return (document.getElementById(id)?.value || "").trim(); }
+
+    if (form) {
+      form.addEventListener("submit", function(e){
+        e.preventDefault();
+
+        const name = val("cName");
+        const phone = val("cPhone");
+        const email = val("cEmail");
+        const jenis = val("cJenis");
+        const msg = val("cMsg");
+
+        if (!name || !phone || !msg) {
+          if (info) info.textContent = "Mohon lengkapi Nama, WhatsApp, dan Pesan.";
+          return;
+        }
+
+        const text =
+          `Assalamualaikum Umrohnew, saya ingin konsultasi.\n\n` +
+          `Nama: ${name}\n` +
+          `WhatsApp: ${phone}\n` +
+          (email ? `Email: ${email}\n` : "") +
+          (jenis ? `Jenis Paket: ${jenis}\n` : "") +
+          `\nPesan:\n${msg}\n\nTerima kasih.`;
+
+        if (info) info.textContent = "Mengarahkan ke WhatsApp…";
+        window.open(buildWaLink(text), "_blank", "noopener");
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
